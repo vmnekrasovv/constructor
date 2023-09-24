@@ -57,6 +57,12 @@ const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const del          = require('del');
 
+const imageminWebp = require('imagemin-webp');
+const extReplace   = require("gulp-ext-replace");
+const clone 	   = require('gulp-clone');
+
+const clonesink    = clone.sink();
+
 function browsersync() {
 	browserSync.init({
 		server: { baseDir: baseDir + '/' },
@@ -87,6 +93,14 @@ function images() {
 	return src(paths.images.src)
 	.pipe(newer(paths.images.dest))
 	.pipe(imagemin())
+	.pipe(clonesink) // start stream
+	.pipe(imagemin([
+      imageminWebp({
+        quality: 60
+      })
+    ]))
+    .pipe(extReplace(".webp"))
+    .pipe(clonesink.tap()) // close stream and send both formats to dist
 	.pipe(dest(paths.images.dest))
   .pipe(browserSync.stream())
 }

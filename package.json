@@ -21,6 +21,10 @@
 		"gulp-concat": "^2.6.1",
 		"gulp-newer": "^1.4.0",
 		"gulp-sass": "^5.1.0",
-		"gulp-uglify-es": "^3.0.0"
+		"gulp-uglify-es": "^3.0.0",
+
+		"gulp-clone": "^2.0.1",
+		"gulp-ext-replace": "^0.3.0",
+		"imagemin-webp": "^6.0.0"
 	}
 }
