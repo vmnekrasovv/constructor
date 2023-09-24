@@ -96,7 +96,7 @@ function images() {
 	.pipe(clonesink) // start stream
 	.pipe(imagemin([
       imageminWebp({
-        quality: 60
+        quality: 70
       })
     ]))
     .pipe(extReplace(".webp"))
