@@ -58,6 +58,7 @@ const newer        = require('gulp-newer');
 const rsync        = require('gulp-rsync');
 const del          = require('del');
 
+const webp         = require('gulp-webp');
 const imageminWebp = require('imagemin-webp');
 const extReplace   = require("gulp-ext-replace");
 const clone 	   = require('gulp-clone');
@@ -93,14 +94,17 @@ function styles() {
 function images() {
 	return src(paths.images.src)
 	.pipe(newer(paths.images.dest))
-	.pipe(imagemin())
+	.pipe(imagemin([
+		imagemin.mozjpeg({quality: 90, progressive: true})
+	]))
 	.pipe(clonesink) // start stream
 	.pipe(imagemin([
       imageminWebp({
-        quality: 70
+        quality: 90
       })
     ]))
     .pipe(extReplace(".webp"))
+    //.pipe(webp())
     .pipe(clonesink.tap()) // close stream and send both formats to dist
 	.pipe(dest(paths.images.dest))
   .pipe(browserSync.stream())
