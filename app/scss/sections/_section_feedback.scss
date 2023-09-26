@@ -1,0 +1,29 @@
+.feedback {
+
+	min-height: 500px;
+	background-image: url('../images/dest/feedback_bg.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	.section-inner {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&-title {
+		max-width: 350px;
+		margin-bottom: 35px;
+		text-align: center;
+		font-family: 'OpenSans';
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 36px;
+		letter-spacing: .15px;
+		color: #48555B;
+
+	}
+}

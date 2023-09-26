@@ -2,7 +2,7 @@
 
 	&.capabilities {
 
-		margin-bottom: 115px;
+		margin-bottom: 200px;
 
 		.section-title {
 			height: 25px;
@@ -25,8 +25,7 @@
 		.button {
 			flex: 1;
 
-			@media screen and (min-width: 500px) and (max-width: 900px) {
-				width: 50%;
+			@media screen and (max-width: 900px) {
 				margin-left: auto;
 				margin-right: auto;
 			}
