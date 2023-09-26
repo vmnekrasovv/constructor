@@ -94,17 +94,9 @@ function styles() {
 function images() {
 	return src(paths.images.src)
 	.pipe(newer(paths.images.dest))
-	.pipe(imagemin([
-		imagemin.mozjpeg({quality: 90, progressive: true})
-	]))
+	.pipe(imagemin())
 	.pipe(clonesink) // start stream
-	.pipe(imagemin([
-      imageminWebp({
-        quality: 90
-      })
-    ]))
-    .pipe(extReplace(".webp"))
-    //.pipe(webp())
+	.pipe(webp())
     .pipe(clonesink.tap()) // close stream and send both formats to dist
 	.pipe(dest(paths.images.dest))
   .pipe(browserSync.stream())

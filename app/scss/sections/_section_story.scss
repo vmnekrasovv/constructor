@@ -99,26 +99,26 @@
 				}
 
 				&.item-1 {
-					background-image: url('../images/dest/story1.jpg');
+					background-image: url('../images/dest/story/story1.jpg');
 
 					@media screen and (max-width: 990px) {
-						background-image: url('../images/dest/story1_large.jpg');
+						background-image: url('../images/dest/story/story1_large.jpg');
 					}
 				}
 
 				&.item-2 {
-					background-image: url('../images/dest/story2.jpg');
+					background-image: url('../images/dest/story/story2.jpg');
 
 					@media screen and (max-width: 990px) {
-						background-image: url('../images/dest/story2_large.jpg');
+						background-image: url('../images/dest/story/story2_large.jpg');
 					}
 				}
 
 				&.item-3 {
-					background-image: url('../images/dest/story3.jpg');
+					background-image: url('../images/dest/story/story3.jpg');
 
 					@media screen and (max-width: 990px) {
-						background-image: url('../images/dest/story3_large.jpg');
+						background-image: url('../images/dest/story/story3_large.jpg');
 					}
 				}
 			}
