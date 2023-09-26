@@ -1,19 +1,16 @@
-.section {
+.story {
+	padding-bottom: 120px;
 
-	&.story {
-		padding-bottom: 120px;
+	@media screen and (max-width: 990px) {
+		padding-bottom: 60px;
+	}
 
-		@media screen and (max-width: 990px) {
-			padding-bottom: 60px;
-		}
-
-		body.navbar-fixed & {
-			padding-top: 125px;
-		}
-		
-		.section-title {
-			margin-bottom: 60px;
-		}
+	body.navbar-fixed & {
+		padding-top: 125px;
+	}
+	
+	.section-title {
+		margin-bottom: 60px;
 	}
 
 	.left-right {
