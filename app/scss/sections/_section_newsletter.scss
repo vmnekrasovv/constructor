@@ -1,0 +1,66 @@
+.newsletter {
+
+	margin-top: -2px;
+	background-color: #171819;
+	
+	.section-inner {
+		max-width: 685px;
+		min-height: 100px;
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: 685px) {
+			padding: 50px 0 60px;
+			flex-direction: column;
+		}
+
+		@media screen and (max-width: 480px) {
+			padding: 50px 20px 60px;
+		}
+
+	}
+
+	&-title {
+		font-family: 'OpenSans';
+		font-weight: 700;
+		font-size: 22px;
+		letter-spacing: .85px;
+		color: #fff;
+
+		@media screen and (max-width: 685px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	&-form {
+
+		form {
+			display: flex;
+		}
+
+		&__input-text {
+			width: 250px;
+			min-height: 40px;
+			padding: 10px 15px;
+			color: #333;
+
+			@media screen and (max-width: 480px) {
+				width: 65%;
+			}
+
+			&::placeholder {
+				color: #979797;
+			}
+		}
+
+		.button {
+			width: 150px;
+
+			@media screen and (max-width: 480px) {
+				width: 35%;
+			}
+		}
+	}
+}
