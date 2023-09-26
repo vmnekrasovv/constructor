@@ -1,23 +1,39 @@
 .section {
 
-	&-title {
-		text-align: left;
-		flex: 1.2;
-
-		&:after {
-			left: 0;
-		}
-	}
-
 	&.capabilities {
+
+		margin-bottom: 115px;
+
 		.section-title {
 			height: 25px;
+			text-align: left;
+			flex: 1.2;
+
+			&:after {
+				left: 0;
+
+				@media screen and (max-width: 900px) {
+					left: calc(50% - 25px);
+				}
+			}
+
+			@media screen and (max-width: 900px) {
+				text-align: center;	
+			}
+		}
+
+		.button {
+			flex: 1;
+
+			@media screen and (min-width: 500px) and (max-width: 900px) {
+				width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 		}
 	}
 
 	.capabilities {
-
-		.margin-bottom: 115px;
 
 		&-row {
 			display: flex;
@@ -26,6 +42,18 @@
 
 			&:first-child {
 				margin-bottom: 73px;
+
+				@media screen and (max-width: 900px) {
+					flex-direction: column;
+					margin-bottom: 43px;
+				}
+			}
+
+			&:last-child {
+
+				@media screen and (max-width: 900px) {
+					flex-direction: column;
+				}
 			}
 		}
 
@@ -37,10 +65,12 @@
 			letter-spacing: .2px;
 			line-height: 19px;
 			color: #48555B;
-		}
 
-		.button {
-			flex: 1;
+			@media screen and (max-width: 900px) {
+				max-width: 80%;
+				margin: 0 auto;
+				text-align: center;	
+			}
 		}
 
 		&-element {
@@ -48,6 +78,24 @@
 			border: 1px solid #E6E6E6;
 			color: #48555B;
 			font-family: 'OpenSans';
+
+			@media screen and (max-width: 900px) {
+				display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			}
+
+			@media screen and (min-width: 500px) and (max-width: 767px) {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@media screen and (min-width: 768px) and (max-width: 900px) {
+				width: 70%;
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 			&__icon {
 				display: inline-block;
@@ -83,12 +131,28 @@
 				text-transform: uppercase;
 
 				margin-bottom: 13px;
+
+				@media screen and (max-width: 900px) {
+					text-align: center;
+				}
+
+				@media screen and (min-width: 500px) and (max-width: 900px) {
+					width: 85%;
+				}
 			}
 
 			&__text {
 				font-size: 13px;
 				line-height: 23px;
 				letter-spacing: .19px;
+
+				@media screen and (max-width: 900px) {
+					text-align: center;
+				}
+
+				@media screen and (min-width: 500px) and (max-width: 900px) {
+					width: 85%;
+				}
 			}
 		} // capabilities-element
 
