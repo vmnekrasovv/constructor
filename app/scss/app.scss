@@ -28,6 +28,11 @@ a {
 	text-decoration: none;
 }
 
+p {
+	margin: 0;
+	padding: 0;
+}
+
 img {
 	display: inline-block;
 	width: 100%;
@@ -63,3 +68,5 @@ img {
 @import 'sections/section_capabilities';
 @import 'sections/section_feedback';
 @import 'sections/section_newsletter';
+
+@import 'footer';

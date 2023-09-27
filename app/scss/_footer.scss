@@ -1,0 +1,136 @@
+.footer {
+
+	color: #fff;
+	background: #141A20;
+
+	&-cols {
+		max-width: 920px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 75px 0 50px;
+
+		@media screen and (max-width: 900px) {
+			padding: 75px 20px 50px 20px;
+		}
+	}
+
+	&-col {
+		&:first-child {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			flex: 1 1 250px;
+			max-width: 250px;
+		}
+	}
+
+	&-logo__img {
+		width: 101.62px;
+		height: 23px;
+	}
+
+	&-text {
+		font-family: 'OpenSans';
+		font-size: 11px;
+		line-height: 20px;
+		letter-spacing: .7px;
+		color: #fff;
+	}
+
+
+
+	&-col {
+		&:nth-child(2) {
+			flex: 1 1 262px;
+			max-width: 262px;
+		}
+	}
+
+	&-menu {
+		
+		&__cols {
+			display: flex;
+			gap: 35px;
+		}
+
+
+		&__col {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__link {
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			font-family: 'OpenSans';
+			font-weight: 600px;
+			font-size: 11px;
+			line-height: 25px;
+			letter-spacing: .85px;
+		}
+	} // footer-menu
+
+	&-col {
+		&:nth-child(3) {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			flex: 1 1 141px;
+			max-width: 141px;
+
+			font-family: 'OpenSans';
+			font-size: 11px;
+			line-height: 16px;
+			letter-spacing: .85px;
+		}
+	}
+
+	&-col {
+		&:nth-child(4) {
+			flex: 1 1 100px;
+			max-width: 100px;
+		}
+	}
+
+	&-socials {
+		display: flex;
+		justify-content: space-between;
+
+		&__element {
+			
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+
+			&.footer-fb {
+				background: url('../images/dest/socials/fb.png');
+			}
+
+			&.footer-twitter {
+
+				background: url('../images/dest/socials/twt.png');
+			}
+
+			&.footer-google {
+				background: url('../images/dest/socials/gl.png');
+
+			}
+		}
+	}
+
+	&-copyright {
+		min-height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #171819;
+		font-family: 'OpenSans';
+		font-size: 11px;
+		color: #fff;
+		letter-spacing: .85px;
+	}
+
+}
