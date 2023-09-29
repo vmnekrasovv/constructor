@@ -38,6 +38,13 @@
 		}
 	}
 
+	&-logo {
+		&__img {
+			width: 81px;
+			height: 18px;
+		}
+	}
+
 	.main-menu {
 		display: flex;
 		gap: 10px;
