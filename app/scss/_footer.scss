@@ -182,21 +182,19 @@
 		&__element {
 			
 			display: inline-block;
-			width: 12px;
-			height: 12px;
+			width: 32px;
+			height: 32px;
 
 			&.footer-fb {
-				background: url('../images/dest/socials/fb.png');
+				background: url('../images/dest/socials/fb_32.png');
 			}
 
-			&.footer-twitter {
-
-				background: url('../images/dest/socials/twt.png');
+			&.footer-twt {
+				background: url('../images/dest/socials/twt_32.png');
 			}
 
-			&.footer-google {
-				background: url('../images/dest/socials/gl.png');
-
+			&.footer-tg {
+				background: url('../images/dest/socials/tg_32.png');
 			}
 		}
 	}
